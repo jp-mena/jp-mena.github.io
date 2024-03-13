@@ -10,12 +10,3 @@ h1 {
     background-color: skyblue;
     padding: 10px;
 }
-
-
-#changeSection:checked + label + #hiddenContent {
-    display: none;
-}
-
-#changeSection:not(:checked) + label + #hiddenContent {
-    display: block;
-}

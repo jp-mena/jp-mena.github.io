@@ -61,13 +61,18 @@
     </table>
     <br>
 
-    <input type="checkbox" id="changeSection">
-    <label for="changeSection">Click here</label>
-    
-    <div id="hiddenContent">
-        <p>This will disappear</p>
-        <p id="dynamicContent">This will also disappear.</p>
-    </div>
-    
+    <input type="text" id="texto">
+    <button onclick="mostrarTexto()">Enviar</button>
+    <p id="texto2"></p>
+
+    <script>
+    function mostrarTexto() {
+    var texto = document.getElementById("texto").value;
+
+    document.getElementById("texto2").innerText = texto;
+  }
+    </script>
+
+
 </body>
 </html>
